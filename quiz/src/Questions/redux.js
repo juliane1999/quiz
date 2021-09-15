@@ -19,7 +19,7 @@
         ],
     },
 {
-        questionText: 'Which of the following matches .reduce() ?',
+        questionText: 'What is custom hook()?',
         answerOptions: [
             { answerText: 'using semantic tags, giving appropriate id/classname, and responsive units', correct: true },
             { answerText: 'Intel', correct: false },
@@ -28,7 +28,7 @@
         ],
     },
 {
-        questionText: 'Which of the following matches .map() ?',
+        questionText: 'What does the localStorage do?',
         answerOptions: [
             { answerText: 'fixed layouts', correct: false },
             { answerText: 'fluid layouts', correct: false },
@@ -37,7 +37,7 @@
         ],
     },
     {
-        questionText: 'What is global scope?',
+        questionText: 'Redux-thunk is..?',
         answerOptions: [
             { answerText: 'fixed layouts', correct: false },
             { answerText: 'fluid layouts', correct: false },
@@ -46,7 +46,7 @@
         ],
     },
     {
-        questionText: 'What is local scope?',
+        questionText: 'The reducer pattern is a..?',
         answerOptions: [
             { answerText: 'Jeff Bezos', correct: false },
             { answerText: 'uses max and min width to determine where breakpoints are introduced', correct: true },
@@ -55,7 +55,7 @@
         ],
     },
     {
-        questionText: 'What is closure?',
+        questionText: 'Context API is..?',
         answerOptions: [
             { answerText: 'using semantic tags, giving appropriate id/classname, and responsive units', correct: true },
             { answerText: 'Intel', correct: false },
