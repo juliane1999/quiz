@@ -88,7 +88,7 @@ const ResAcc = () => {
 		},
 	];
 
-	ResAcc (
+	return (
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
