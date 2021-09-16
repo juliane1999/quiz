@@ -2,7 +2,7 @@ import React from 'react'
 // import {Route, Switch, Link } from 'react-router-dom'
 import {Route,Switch,Link} from 'react-router-dom'
 import {useHistory} from 'react-router'
-import Home from './components/Home'
+import Home from './Components/Home'
 import Api from './Questions/api'
 import Dbms from './Questions/dbms'
 import Javascript from './Questions/javascript'
@@ -10,6 +10,15 @@ import Node from './Questions/node'
 import Redux from './Questions/redux'
 import ResAcc from './Questions/resAcc'
 import Spa from './Questions/spa'
+import styled from 'styled-components'
+
+const StyledApp = styled.div`
+.app{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+`
 
 function App() {
     const { push } = useHistory()
@@ -17,6 +26,7 @@ function App() {
         push('/')
       }
     return(
+        <StyledApp>
         <div className='app'>
             <nav>
             <img src ='https://drive.google.com/uc?export=view&id=1cn-kChb_r9Sv-U_N9nXyJqEBJBzWl1so' className="logo" onClick={onClickLogo}></img>
@@ -32,6 +42,7 @@ function App() {
                 <Route path='/' component={Home}/>
             </Switch>
         </div>
+        </StyledApp>
     )
 }
 
