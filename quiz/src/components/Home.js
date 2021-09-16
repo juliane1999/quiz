@@ -12,7 +12,7 @@ export default function Home() {
 
     return(
         <StyledHome>
-        <div className= 'quiz'>
+        <div>
             <h1>Interview Prep Quizes</h1>
             <div className='quiz container'>
                 <Link to='/api'>
