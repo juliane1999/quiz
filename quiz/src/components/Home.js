@@ -1,10 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const StyledHome = styled.div`
+.quiz {
+border: 1px solid black
+}
+`
 
 export default function Home() {
 
     return(
-        <div>
+        <StyledHome>
+        <div className= 'quiz'>
             <h1>Interview Prep Quizes</h1>
             <div className='quiz container'>
                 <Link to='/api'>
@@ -50,5 +58,6 @@ export default function Home() {
                 </Link>
             </div>
         </div>
+        </StyledHome>
     )
 }
