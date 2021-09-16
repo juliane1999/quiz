@@ -1,5 +1,6 @@
 import React from 'react'
 import {Route, Switch, Link } from 'react-router-dom'
+import { useHistory } from "react-router";
 import Home from './components/Home'
 import Api from './Questions/api'
 import Dbms from './Questions/dbms'
@@ -10,10 +11,14 @@ import ResAcc from './Questions/resAcc'
 import Spa from './Questions/spa'
 
 function App() {
+    const { push } = useHistory()
+    const onClickLogo = (e) => {
+        push('/')
+      }
     return(
         <div className='app'>
             <nav>
-                <p>logo</p>
+            <img src ="https://drive.google.com/thumbnail?id=1cn-kChb_r9Sv-U_N9nXyJqEBJBzWl1so" className="logo" onClick={onClickLogo}></img>
             </nav>
             <Switch>
                 <Route path='/api' component={Api}/>
